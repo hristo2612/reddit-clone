@@ -1,5 +1,6 @@
 import { Flex, Image } from '@chakra-ui/react';
 import React from 'react';
+import AuthModal from '../Modal/Auth/AuthModal';
 import RightContent from './RightContent/RightContent';
 import SearchInput from './SearchInput';
 
@@ -12,6 +13,7 @@ const Navbar: React.FC<any> = () => {
       </Flex>
       <SearchInput />
       <RightContent />
+      <AuthModal />
     </Flex>
   );
 };
