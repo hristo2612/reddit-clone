@@ -1,4 +1,4 @@
-import { PhoneIcon, SearchIcon } from '@chakra-ui/icons';
+import { SearchIcon } from '@chakra-ui/icons';
 import { Flex, Input, InputGroup, InputLeftElement } from '@chakra-ui/react';
 import React from 'react';
 
@@ -8,7 +8,7 @@ const SearchInput: React.FC<SearchInputProps> = () => {
   return (
     <Flex flexGrow={1} mr={2} align='center'>
       <InputGroup>
-        <InputLeftElement pointerEvents='none' children={<SearchIcon color='gray.300' />} />
+        <InputLeftElement pointerEvents='none'><SearchIcon color='gray.300' /></InputLeftElement> 
         <Input
           placeholder='Search Reddit'
           fontSize='10pt'
